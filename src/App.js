@@ -11,7 +11,7 @@ import StarProduct from "./components/StarProduct.js"
 // import HotAccessories from "./components/HotAccessories.js"
 import ProductReviews from "./components/ProductReviews.js"
 import Videos from "./components/Videos.js"
-
+import Banner from "./components/Banner.js"
 
 function App() {
   return (
@@ -51,6 +51,9 @@ function App() {
       <ProductReviews productReviews={data.productReviews}/>
       <Heading text="VIDEOS" />
       <Videos videos={data.videos} />
+      <Heading  text="IN THE PRESS"/>
+      <Banner  banner={data.banner}/>
+
 
     </Router>
   );
